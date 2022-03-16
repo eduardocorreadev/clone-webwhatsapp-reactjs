@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: #D2DBDC;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* App */
+.app-window {
+    width: 100%;
+    height: 100vh;
+    background: #ededed;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Sidebar */
+.app-window .sidebar {
+    position: relative;
+    width: 35%;
+    max-width: 415px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+}
+
+.app-window .sidebar header {
+    height: 60px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-window .sidebar header img.header-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.app-window .sidebar header .header-buttons {
+    display: flex;
+}
+
+.app-window .sidebar header .header-buttons .header-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app-window .sidebar header .header-buttons .header-btn svg {
+    font-size: 1.4em;
+}
+
+.app-window .sidebar .search {
+    background: #f6f6f6;
+    border-bottom: 1px solid #eee;
+    padding: 5px 15px;
+}
+
+.app-window .sidebar .search .search-input {
+    height: 40px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.app-window .sidebar .search .search-input svg {
+    font-size: 1.4em;
+}
+
+.app-window .sidebar .search .search-input input {
+    flex: 1;
+    background: transparent;
+    border: 0;
+    margin-left: 10px;
+}
+
+.chat-list {
+    flex: 1;
+    background: #fff;
+    overflow-y: auto;
+}
+
+.chat-list::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Content Area */
+.app-window .content-area {
+    flex: 1;
+}

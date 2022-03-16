@@ -1,0 +1,115 @@
+.chat-window {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-window-header {
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-window-headerinfo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.chat-window-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0 15px;
+}
+
+.chat-window-name {
+    color: #000;
+    font-size: 17px;
+}
+
+.chat-window-header-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.chat-window-btn {
+    font-size: 1.5em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+/* Chat Body */
+.chat-window-body {
+    flex: 1;
+    background: #e5ddd5;
+    background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    background-position: center;
+    overflow-y: auto;
+    padding: 20px 30px;
+}
+
+.chat-window-body::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+
+.chat-window-body::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,.2);
+}
+
+
+/* Emoji Picker */
+.chat-window-emojiarea  {
+    overflow-y: hidden;
+    transition: all ease 0.3s;
+}
+
+.chat-window-emojiarea aside.emoji-picker-react {
+    width: auto;
+    background: none;
+}
+
+.chat-window-emojiarea aside.emoji-picker-react .emoji-grupo::before {
+    background: none;
+}
+
+
+/* Chat Footer */
+.chat-window-footer {
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-window-pre {
+    display: flex;
+    margin: 0 15px;
+}
+
+.chat-window-inputarea {
+    flex: 1;
+}
+
+.chat-window-inputarea  .chat-window-input {
+    width: 100%;
+    height: 40px;
+    color: #4a4a4a;
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.chat-window-pos {
+    display: flex;
+    margin: 0 15px;
+}

@@ -1,0 +1,75 @@
+.newChat {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 35%;
+    max-width: 415px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+
+.newChat--header {
+    background: #00bfa5;
+    padding: 60px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.newChat--backbutton {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.newChat-headtitle {
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.newChat--list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.newChat--list::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.newChat--list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.newChat--item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.newChat--item:hover {
+    background: #ececec;
+}
+
+.newChat--itemavatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.newChat--itemname {
+    color: #000;
+    font-size: 17px;
+}
